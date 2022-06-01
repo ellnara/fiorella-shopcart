@@ -1,0 +1,226 @@
+// #products {
+//   font-family: Montserrat, sans-serif;
+//   .products-nav {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 60px;
+//   }
+//   ul {
+//     padding: 0;
+//     display: flex;
+//     list-style-type: none;
+//     li {
+//       margin-right: 45px;
+//     }
+//   }
+//   a {
+//     text-decoration: none;
+//     color: black;
+//     &:hover {
+//       color: red;
+//     }
+//     font-size: 12px;
+//     letter-spacing: 1px;
+//   }
+//   .products {
+//     display: flex;
+//     flex-wrap: wrap;
+//     text-align: center;
+//     img {
+//       width: 295px;
+//       height: 380px;
+//     }
+//     gap: 15px;
+//     justify-content: space-between;
+//   }
+//   .product {
+//     display: inline-block;
+//     overflow: hidden;
+//     box-sizing: border-box;
+//     img {
+//       transition: transform 0.2s;
+//       &:hover {
+//         transform: scale(1.1);
+//       }
+//     }
+//   }
+//   .product-info {
+//     margin: 20px auto;
+//     font-size: 11px;
+//     color: grey;
+//     h5 {
+//       font-size: 12px;
+//       letter-spacing: 2px;
+//       color: black;
+//     }
+//     .sale {
+//       text-decoration: line-through;
+//       & > span {
+//         color: black;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
+// .filter {
+//   display: block;
+// }
+// .filter-drpdown {
+//   padding: 20px;
+//   display: none;
+//   a {
+//     display: block;
+//     padding: 10px;
+//   }
+// }
+// .filter:hover .filter-drpdown {
+//   display: block;
+//   position: absolute;
+//   background-color: white;
+//   z-index: 3;
+// }
+
+// .products {
+//   margin-top: 100px;
+//   .product {
+//     margin-top: -90px;
+//     display: inline-block;
+//     overflow: hidden;
+//     box-sizing: border-box;
+//     img {
+//       width: 245px;
+//       height: 316px;
+//       transition: transform 0.2s;
+//       &:hover {
+//         transform: scale(1.1);
+//       }
+//     }
+//   }
+//   .product-info {
+//     h5 {
+//       font-size: 13px;
+//       color: black;
+//     }
+//     color: gray;
+//     font-size: 12px;
+//     text-align: center;
+//     margin-bottom: 80px;
+//   }
+//   span {
+//     span {
+//       color: gray;
+//       text-decoration: line-through;
+//     }
+//   }
+//   .sale {
+//     color: black;
+//   }
+// }
+// .all-products {
+//   position: absolute;
+//   top: 660px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 50px;
+//   .second-nav {
+//     display: block;
+//     width: 100%;
+//     margin-left: -30px;
+//     ul li {
+//       display: inline;
+//       padding-right: 28px;
+//     }
+//     a {
+//       letter-spacing: 1px;
+//       text-decoration: none;
+//       color: black;
+//       font-size: 13px;
+//       &:hover {
+//         color: red;
+//       }
+//     }
+//   }
+// }
+// .filter {
+//   margin-left: 420px;
+// }
+// .filter-drpdown {
+//   visibility: hidden;
+// }
+.products {
+  .product-image {
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    img {
+      width: 295px;
+      height: 380px;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.1);
+        z-index: 0;
+      }
+    }
+  }
+  .product-info {
+    h5 {
+      font-size: 13px;
+      color: black;
+    }
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  span {
+    cursor: pointer;
+    span {
+      color: gray;
+      text-decoration: line-through;
+    }
+  }
+  .sale {
+    color: black;
+  }
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products-nav {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -30px;
+  ul li {
+    display: inline;
+    padding-right: 28px;
+  }
+  a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.filter {
+  display: inline;
+}
+.filter-drpdown {
+  display: none;
+  a {
+    display: block;
+    padding: 10px;
+  }
+}
+.filter:hover .filter-drpdown {
+  display: block;
+  position: absolute;
+  background-color: white;
+  z-index: 3;
+}
